@@ -19,7 +19,7 @@ export const Navbar = () => {
               <li>Testimonial</li>
             </ul>
           </div>
-          <button className="button n-button">Contact me</button>
+          <button className="button n-button">Contact</button>
         </div>
       </div>
     </div>
