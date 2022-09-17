@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  height: 77vh;
+  height: 70vh;
   margin-top: 6rem;
 }
 .i-left {
@@ -47,9 +47,9 @@
 .i-right {
   flex: 1;
   position: relative;
-  height: auto;
+  /* height: auto;
   width: auto;
-  background: linear-gradient(to right, #ffffff 64%, #99ff33 114%);
+  background: linear-gradient(to right, #ffffff 64%, #99ff33 114%); */
   border-radius: 11%;
 }
 .i-right > :nth-child(1) {
@@ -68,4 +68,25 @@
 .i-right > * {
   position: absolute;
   z-index: 1;
+}
+.blur {
+  position: absolute;
+  border-radius: 50%;
+  background: #f8f8f6;
+  height: 500px;
+  width: 70%;
+  filter: blur(100px);
+  z-index: -9;
+  top: -7%;
+  left: 30%;
+}
+.blur2 {
+  position: absolute;
+  border-radius: 50%;
+  background: #f8f8f6;
+  height: 300px;
+  width: 70%;
+  filter: blur(100px);
+  z-index: -9;
+  top: 50%;
 }
