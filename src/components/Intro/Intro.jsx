@@ -39,6 +39,18 @@ const Intro = () => {
       <div className="i-right">
         <img src={Splash} alt="" />
         <img src={Me} alt="" />
+        <div
+          className="blur"
+          style={{
+            background: 'rgb(102 102 255)',
+          }}
+        ></div>
+        <div
+          className="blur2"
+          style={{
+            background: 'rgb(255 102 102)',
+          }}
+        ></div>
       </div>
     </div>
   );
