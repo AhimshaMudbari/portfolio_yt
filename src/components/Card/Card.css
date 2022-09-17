@@ -1,0 +1,62 @@
+.card {
+  width: 10rem;
+  height: 14rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border: 5px solid var(--gray);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 7px;
+}
+.card > :nth-child(1) {
+  transform: scale(0.85);
+  margin-bottom: -1.5rem;
+}
+.card > span:nth-of-type(2) {
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.c-button {
+  width: 60%;
+  box-shadow: none;
+}
+.modal {
+  background: rgb(253, 247, 238);
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--orange);
+}
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 38px;
+  margin-top: 15px;
+}
+.picture {
+  text-align: center;
+}
+.Content {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 22px;
+  border-bottom: 1px solid rgb(245, 165, 165);
+  padding-bottom: 25px;
+}
+.btn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.modal > .btn > button {
+  transform: scale(0.8);
+  border: none;
+  background-color: rgb(253, 247, 238);
+  text-align: center;
+  cursor: pointer;
+}
