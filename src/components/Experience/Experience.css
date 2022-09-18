@@ -5,6 +5,8 @@
   gap: 5rem;
   height: 30vh;
   margin-bottom: 8rem;
+  z-index: 10;
+  position: relative;
 }
 
 .achievement {
@@ -46,4 +48,13 @@
   font-weight: bolder;
   font-size: 30px;
   color: var(--grape);
+}
+.e-blur {
+  height: 500px;
+  width: 900px;
+  border-radius: 100%;
+  background: rgb(207, 208, 204);
+  z-index: -100;
+  position: absolute;
+  filter: blur(100px);
 }
