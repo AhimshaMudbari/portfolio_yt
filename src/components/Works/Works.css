@@ -1,0 +1,64 @@
+.works {
+  padding: 0 4rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+.w-right {
+  position: relative;
+  flex: 1;
+}
+.w-mainCircle {
+  position: relative;
+  left: 9rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgb(253, 245, 245);
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  border: 5px solid orange;
+}
+.w-secCircle {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  background: #ffff;
+  border: 5px solid tan;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  top: 5rem;
+  left: -3rem;
+}
+.w-mainCircle > :nth-child(3) {
+  top: 5.5rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(4) {
+  top: 5rem;
+  left: 15rem;
+}
+.w-mainCircle > :nth-child(5) {
+  top: 14rem;
+  left: 6rem;
+}
+.w-blur {
+  height: 25em;
+  width: 80%;
+  left: 97%;
+}
+
+.w-secCircle > img {
+  transform: scale(0.8);
+}
