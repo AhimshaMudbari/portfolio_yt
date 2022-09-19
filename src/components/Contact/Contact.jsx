@@ -2,13 +2,13 @@ import React from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { useState } from 'react';
 
 const Contact = () => {
   const form = useRef();
-
+  const [done, setDone] = useState();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         'service_64gfu7o',
@@ -19,6 +19,7 @@ const Contact = () => {
       .then(
         (result) => {
           alert('Send successfully');
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
@@ -56,6 +57,15 @@ const Contact = () => {
             required
           />
           <input type="submit" value="Send" className="button c-button" />
+          <span
+            style={{
+              fontSize: '27px',
+              fontWeight: 'bold',
+              color: 'orange',
+            }}
+          >
+            {done && 'Thanks for contacting me...'}
+          </span>
           <div
             className="blur c-blur1"
             style={{ background: 'var(--purple)' }}
