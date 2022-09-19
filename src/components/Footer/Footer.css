@@ -1,0 +1,33 @@
+.footer {
+  position: relative;
+  margin: -0.5rem -3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.f-content > :nth-child(1) {
+  margin: 7rem 0rem 0.5rem 0rem;
+}
+.f-content > :nth-child(2) {
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+.f-content > :nth-child(3) {
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+.f-content > span {
+  font-weight: bold;
+  font-size: 22px;
+}
+.f-icons {
+  gap: 2rem;
+  display: flex;
+  cursor: pointer;
+}
