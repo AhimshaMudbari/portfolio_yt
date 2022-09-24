@@ -2,7 +2,8 @@
   padding: 0 3rem;
   display: flex;
   height: 80vh;
-  margin-top: 4rem;
+  margin-top: 11rem;
+  margin-bottom: 10rem;
 }
 .c-right {
   display: flex;
@@ -49,4 +50,37 @@ textarea {
   filter: blur(100px);
   border-radius: 100%;
   left: 1%;
+}
+@media screen and (max-width: 480px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-right > form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px !important;
+  }
+  .c-right .user {
+    height: 300px;
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-right > form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px !important;
+  }
+  .c-right .user {
+    height: 300px;
+    width: 300px !important;
+  }
 }
