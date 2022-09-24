@@ -8,7 +8,6 @@ import { Navbar } from './components/Navbar/Navbar';
 import Portfolio from './components/Portfolio/Portfolio';
 import Services from './components/Services/Services';
 import Testimonials from './components/Testimonials/Testimonials';
-import Works from './components/Works/Works';
 import { themeContext } from './Context';
 function App() {
   const theme = useContext(themeContext);
@@ -21,11 +20,12 @@ function App() {
         color: darkMode ? 'white' : '',
       }}
     >
-      <Navbar />
+      <div className="navvy">
+        <Navbar />
+      </div>
       <Intro />
       <Services />
       <Experience />
-      <Works />
       <Portfolio />
       <Testimonials />
       <Contact />
