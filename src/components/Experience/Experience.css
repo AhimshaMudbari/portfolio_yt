@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  height: 30vh;
-  margin-bottom: 8rem;
+  height: 70vh;
+  margin-bottom: 15rem;
   z-index: 10;
   position: relative;
 }
@@ -58,4 +58,18 @@
   z-index: -100;
   position: absolute;
   filter: blur(100px);
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    transform: scale(0.4);
+    margin-top: -10rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .experience {
+    transform: scale(0.4);
+    margin-top: -10rem;
+  }
 }
