@@ -1,7 +1,7 @@
 :root {
   --yellow: #f5c32c;
-  --orange: #fca61f;
-  --black: #242d49;
+  --orange: #6f624c;
+  --black: #0737c7;
   --gray: #788097;
   --blueCard: #ddf8fe;
   --grape: #001c3b;
@@ -18,17 +18,27 @@
 }
 
 .button {
-  border-radius: 34px;
+  border-radius: 11px;
   border: none;
   padding: 8px;
   font-size: 16px;
   color: #ddf8fe;
-  background: linear-gradient(180deg, #fdc50f 26.7%, #fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  background: linear-gradient(180deg, #96c3ff 26.7%, #2464b9 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(90, 154, 244, 0.42);
 }
 .button:hover {
-  background: white;
+  background: linear-gradient(180deg, #e3eaf4 26.7%, #fdf2f0 99.36%);
   cursor: pointer;
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  color: var(--grape);
+  border: 2px solid var(--black);
+}
+/* .navvy {
+  position: sticky;
+  z-index: 99999;
+} */
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
 }
