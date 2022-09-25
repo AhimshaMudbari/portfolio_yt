@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   flex-direction: column;
   gap: 2rem;
   position: relative;
@@ -38,7 +39,7 @@
   background: linear-gradient(to top left, #99ccff -65%, #ffffff 122%);
   box-shadow: var(--boxShadow);
   border-radius: 20px;
-  border: 5px solid orange;
+  border: 5px solid;
 }
 .testimonial > :nth-child(1) {
   border-radius: 100%;
@@ -71,5 +72,32 @@
 }
 
 .t-wrapper .swiper-pagination-bullet-active {
-  background: var(--orange);
+  background: blueviolet;
+}
+
+@media screen and (max-width: 480px) {
+  .t-wrapper {
+    padding: 0;
+  }
+  .testimonial {
+    width: 420px;
+    height: 450px;
+    scale: 0.5;
+  }
+  .testimonial > :nth-child(2) {
+    font-size: 23px;
+  }
+  .testimonial > :nth-child(3) {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .testimonial > :nth-child(4) {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 620px) and (min-width: 481px) {
+  .t-wrapper {
+    display: none;
+  }
 }
