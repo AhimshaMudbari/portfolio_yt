@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 2px solid rgb(165, 132, 132);
 }
 .f-content {
   position: absolute;
@@ -11,7 +12,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: -5rem;
 }
 .f-content > :nth-child(1) {
   margin: 7rem 0rem 0.5rem 0rem;
@@ -22,6 +23,9 @@
 .f-content > :nth-child(3) {
   margin: 0rem 0rem 1.5rem 0rem;
 }
+.f-content > * {
+  color: aqua;
+}
 .f-content > span {
   font-weight: bold;
   font-size: 22px;
@@ -30,4 +34,15 @@
   gap: 2rem;
   display: flex;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .f-content > * {
+    scale: 0.7;
+  }
+}
+@media screen and (max-width: 620px) {
+  .f-content > * {
+    scale: 0.9;
+  }
 }
