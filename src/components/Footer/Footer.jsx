@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Wave from '../../img/wave.png';
+import Gradient from '../../img/gradient.png';
 import Github from '@iconscout/react-unicons/icons/uil-github';
 import Facebook from '@iconscout/react-unicons/icons/uil-facebook';
 import Instagram from '@iconscout/react-unicons/icons/uil-instagram';
@@ -8,7 +8,13 @@ import Instagram from '@iconscout/react-unicons/icons/uil-instagram';
 const Footer = () => {
   return (
     <div className="footer">
-      <img src={Wave} alt="" style={{ width: '100%' }} />
+      <img
+        src={Gradient}
+        className="footer-bg"
+        alt=""
+        style={{ width: '100%' }}
+        height={350}
+      />
       <div className="f-content">
         <span>+977-9828911954</span>
         <span>Kathmandu-32, Kathmandu</span>
@@ -16,7 +22,7 @@ const Footer = () => {
 
         <div className="f-icons">
           <a href="https://github.com/AhimshaMudbari" target="blank">
-            <Github size={70} color="black" />
+            <Github size={70} color="white" />
           </a>
           <a href="https://www.facebook.com/ahim2000/" target="blank">
             <Facebook size={70} color="blue" />
