@@ -1,7 +1,9 @@
 .services {
   padding: 0 3rem;
   display: flex;
-  height: 90vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 160vh;
   margin-bottom: 8rem;
   margin-top: 9rem;
 }
@@ -31,11 +33,12 @@
 }
 
 .cards {
-  position: relative;
   flex: 1;
 }
 .cards > * {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .s-blur {
   top: 13rem;
@@ -45,4 +48,58 @@
   top: 55rem;
   left: 15rem;
   background: rgb(219, 214, 249);
+}
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 900px;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+    height: 70rem;
+    gap: 2rem;
+  }
+  .awesome > * {
+    transform: scale(0.8);
+  }
+  .s-button {
+    width: 200px;
+  }
+  .cards {
+    transform: scale(0.7);
+    padding: 1rem;
+    margin-top: -10rem;
+  }
+  .awesome > :nth-child(1) {
+    font-size: 30px;
+  }
+  .awesome > :nth-child(2) {
+    font-size: 41px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .services {
+    margin-top: 900px;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+    height: 70rem;
+    gap: 2rem;
+  }
+  .awesome > * {
+    transform: scale(0.8);
+  }
+  .s-button {
+    width: 200px;
+  }
+  .cards {
+    transform: scale(0.7);
+    padding: 1rem;
+    margin-top: -10rem;
+  }
+  .awesome > :nth-child(1) {
+    font-size: 30px;
+  }
+  .awesome > :nth-child(2) {
+    font-size: 41px;
+  }
 }
