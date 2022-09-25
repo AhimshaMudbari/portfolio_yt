@@ -25,7 +25,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper Testimonial">
       <div className="t-heading">
         <span>what others say about me?</span>
         <div className="blur t-blur1"></div>
