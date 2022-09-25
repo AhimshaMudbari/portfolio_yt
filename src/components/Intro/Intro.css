@@ -29,17 +29,13 @@
   color: var(--gray);
   margin-top: 15px;
 }
-.i-button {
-  height: 2rem;
-  width: 7rem;
-}
+
 .i-icons {
   gap: 0rem;
   display: flex;
-  margin-top: 3rem;
 }
 .i-icons > * {
-  transform: scale(0.7);
+  transform: scale(0.8);
 }
 .i-icons > *:hover {
   cursor: pointer;
@@ -89,4 +85,50 @@
   filter: blur(100px);
   z-index: -9;
   top: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    margin-bottom: -200px;
+    margin-top: 0rem;
+  }
+  .i-right {
+    transform: scale(0.5);
+    left: -5rem;
+  }
+  .blur,
+  .blur2 {
+    display: none;
+  }
+  .i-left {
+    transform: scale(0.7);
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+  }
+  .i-name > * {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .intro {
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+  .i-right {
+    transform: scale(0.7);
+    left: -5rem;
+  }
+  .blur,
+  .blur2 {
+    display: none;
+  }
+  .i-left {
+    transform: scale(0.7);
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+  }
+  .i-name > * {
+    font-size: 25px;
+  }
 }
