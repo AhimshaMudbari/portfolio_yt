@@ -26,6 +26,7 @@
 .n-list > ul {
   display: flex;
   gap: 2rem;
+  cursor: pointer;
   margin-right: 4rem;
 }
 
@@ -35,4 +36,21 @@
 }
 .n-button {
   flex: 2;
+}
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    flex: 1;
+  }
 }
