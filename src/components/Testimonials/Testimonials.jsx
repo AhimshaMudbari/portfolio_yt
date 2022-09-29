@@ -12,7 +12,7 @@ const Testimonials = () => {
     {
       img: Shankar,
       review:
-        'A good and high disciplined guy and the best guy ever to work with.',
+        'Full commitment in the work, punctual and the most co-operative person',
       by: 'Shankar Khadka',
       Organization: 'Living Stone College',
     },
